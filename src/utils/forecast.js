@@ -22,6 +22,7 @@ const forecast = (latitude, longitude, callback) => {
 		const summary = body.current.weather_descriptions;
 		const temperature = body.current.temperature;
 		const feelslike = body.current.feelslike;
+		const weatherIcon = body.current.weather_icons[0];
 
 		if (error) {
 			callback("Unable to connect to weather services!", undefined);
@@ -31,11 +32,12 @@ const forecast = (latitude, longitude, callback) => {
 			callback(
 				undefined,
 				summary +
-					". It is currently " +
-					temperature +
-					" degrees. It feels like " +
-					feelslike +
-					" degrees."
+				". It is currently " +
+				temperature +
+				" degrees. It feels like " +
+				feelslike +
+				" degrees.",
+				weatherIcon
 			);
 		}
 	});

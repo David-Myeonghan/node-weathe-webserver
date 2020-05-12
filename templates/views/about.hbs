@@ -11,9 +11,34 @@
 <body>
     <div class="main-content">
         {{>header}}
-        <p>This website was created by Me. It uses data from mapbox.com and weatherstack.com</p>
+        <h2 class="main-big-hello">Hi, I'm David. Nice to meet you.</h2>
+        <hr>
+
+        <h3 class="main-hello">I want to be a software engineer who can survive after 20 years in the IT field. I am
+            looking to work as a
+            full-stack developer position where my creative web development skills such as Node/React and the unique
+            experience in commercial field will be valuable. Having worked with start-up companies, I am familiar with a
+            team-centred environment and keeping tight deadlines. </h3>
+        <hr>
+        <h3 class="main-hello" text-align="center">You can find more about my projects in the links below!</h3>
+
+        <div class="my-link">
+            <a href="https://david-myeonghan.github.io/myflix" target="_blank">Movie/TV Discovery</a>
+            <p>Using React</p>
+            <br />
+            <a href="http://mybnb.xnpmcvzkgj.ap-southeast-2.elasticbeanstalk.com/" target="_blank">Airbnb
+                Clone</a>
+            <p>Using Django and AWS</p>
+        </div>
+
+        <hr>
         <img class="portrait" src="/img/me.png" />
 
+        <h3 class="main-touch">- Get in Touch -
+            <br /> myeonghan12@gmail.com</h3>
+        {{!-- <p class="no-highlight">Weather menu uses data from 'mapbox.com' and
+            'weatherstack.com'
+        </p> --}}
     </div>
     {{>footer}}
 </body>

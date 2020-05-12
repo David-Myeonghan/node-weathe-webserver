@@ -19,7 +19,7 @@ body {
 footer {
 	color: #888888;
 	border-top: 1px solid #eeeeee;
-	margin-top: 16px;
+	margin-top: 32px;
 	padding: 16px 0;
 }
 
@@ -40,7 +40,13 @@ header a {
 }
 
 .portrait {
-	width: 250px;
+	width: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 32px;
+	padding-bottom: 16px;
+	
 }
 
 input {
@@ -54,4 +60,42 @@ button {
 	background: #888888;
 	color: white;
 	padding: 8px;
+}
+
+.weather-icon {
+	padding: 8 0px;
+}
+
+.my-link {
+	/* margin: 8px; */
+
+	text-align: center;
+	padding-top: 16px;
+	padding-bottom: 32px;
+}
+
+.main-hello {
+	margin: 32px;
+	padding: 32px;
+	text-align: center;
+}
+
+.main-big-hello {
+	padding-top: 32px;
+	padding-bottom: 48px;
+	text-align: center;
+}
+
+.main-touch {
+	padding: 8px;
+	text-align: center;
+}
+
+.no-highlight {
+	color: #888888;
+}
+
+.align-middle {
+	text-align: center;
+	margin: 8px
 }

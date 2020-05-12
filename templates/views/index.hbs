@@ -16,16 +16,18 @@
 <body>
     <div class="main-content">
         {{>header}}
-        <p>Use this site to get weather in your neighbourhood!</p>
+        <p>Enter your neighbouring area to get the weather!</p>
 
         <form>
             <input placeholder="Location">
             <button>Search</button>
         </form>
 
-        <p id="message-1"></p>
-        <p id="message-2"></p>
-
+        <div class="align-middle">
+            <p id="message-1"></p>
+            <p id="message-2"></p>
+            <img id="icon-1" class="weather-icon">
+        </div>
     </div>
 
     {{>footer}}
